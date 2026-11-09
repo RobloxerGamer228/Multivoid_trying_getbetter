@@ -156,7 +156,9 @@ struct ExSpawnSource {
     const wchar_t* cls;
     const wchar_t* const* outputs;   // null-terminated; null: any allowlisted output
 };
-constexpr const wchar_t* kEventerOutputs[] = {L"ventCrawler_C", L"superEgger_C", nullptr};
+constexpr const wchar_t* kEventerOutputs[] = {L"ventCrawler_C", L"superEgger_C",
+                                                 L"kocker_C", L"morningUfo_C", L"rozitBorg_C",
+                                                 L"ufoDropper_body_C", L"ufoDropper_car_C", L"ufoDropper_tank_C", nullptr};
 // The gamemode mints many classes besides these, and most of its other spawners are not refused on a client yet,
 // so its source is narrowed to the two outputs of the night roll (mainGamemode_C::CustomEvent_5, an Octa or a
 // night egg), whose client roll the spawn authority refuses.
