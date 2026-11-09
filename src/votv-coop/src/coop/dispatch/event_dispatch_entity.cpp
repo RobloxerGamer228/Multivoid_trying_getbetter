@@ -200,10 +200,12 @@ bool HandleEntityEvent(net::Session& session,
                 : coop::element::Registry::IsAllowedPeerAllocatedEid(p.elementId);
             if (!ok) {
                 UE_LOGW("event_feed: PropSpawn elementId=0x%08x out of allowed "
-                        "%s range (senderPeerSlot=%d) -- dropping",
+                         "%s range (senderPeerSlot=%d) cls='%.*s' key='%.*s' -- dropping",
                         p.elementId,
                         senderIsHost ? "host(any)" : "peer",
-                        msg.senderPeerSlot);
+                        msg.senderPeerSlot,
+                        static_cast<int>(p.className.len), p.className.data,
+                         static_cast<int>(p.key.len), p.key.data);
                 break;
             }
         }
