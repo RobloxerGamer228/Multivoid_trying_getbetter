@@ -76,10 +76,10 @@ const NoReplayRow kNoReplayRows[] = {
     // grays and the tentacle balls are mirrored; the eventer's other outputs are not (its catch
     // enrols only what a client's copy is kept inert for, npc_world_enum), so they stay host-only:
     { "ventCrawler", "npc lane (allowlisted; eventer EX-catch)" },
-    { "ventKnocker", "world-actor spawn (no lane yet: the eventer's catch leaves kocker_C out)" },
+    { "ventKnocker", "world-actor lane (eventer EX-catch; kocker_C mirrored)" },
     { "tentacleBalls", "npc lane (follower EX-catch)" },
-    { "morningGay", "world-actor spawn (no lane yet: the eventer's catch leaves morningUfo_C out)" },
-    { "borgRozital", "world-actor spawn (no lane yet: the eventer's catch leaves rozitBorg_C out)" },
+    { "morningGay", "world-actor lane (eventer EX-catch; morningUfo_C mirrored)" },
+    { "borgRozital", "world-actor lane (eventer EX-catch; rozitBorg_C mirrored)" },
     { "graysforest", "npc lane (controller EX-catch)" },
     { "graystank", "creature spawn (no lane yet)" }, { "arirBuster", "creature spawn (no lane yet)" },
     { "eggvasion", "npc and world-actor lanes (eventer and egger EX-catch)" },
@@ -87,9 +87,9 @@ const NoReplayRow kNoReplayRows[] = {
     { "soltoClean", "world-actor spawn (no lane yet: soltomiaCleaning_C plays gameplay on a mirror)" },
     { "salt", "save-actor spawn (no lane)" }, { "rozitalHole", "save-actor spawn (no lane)" },
     { "dreambase", "save-actor spawn (no lane)" },
-    { "fallbody_0", "dropper spawn (no lane yet: the eventer's catch leaves the droppers out)" },
-    { "fallbody_1", "dropper spawn (no lane yet: the eventer's catch leaves the droppers out)" },
-    { "fallcar_0", "dropper spawn (no lane yet: the eventer's catch leaves the droppers out)" },
+    { "fallbody_0", "world-actor lane (eventer EX-catch; ufoDropper_* mirrored)" },
+    { "fallbody_1", "world-actor lane (eventer EX-catch; ufoDropper_* mirrored)" },
+    { "fallcar_0", "world-actor lane (eventer EX-catch; ufoDropper_* mirrored)" },
     // The prank layer (host-local RNG; thrown-prop outputs ride the prop lane):
     { "food", "prank special (prop lane)" }, { "drive", "prank special (prop lane)" },
     { "atvFuel", "prank special (prop lane)" }, { "atvFix", "prank special (prop lane)" },
